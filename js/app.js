@@ -15,7 +15,7 @@ function init() {
     const aspect = container.clientWidth / container.clientHeight;
     const near = 0.1;
     const far = 500;
-    
+
     //Camera Setup 
     camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
     camera.position.set(0, 0, 5);
@@ -25,7 +25,7 @@ function init() {
     scene.add(ambient)
 
     // set Strahler
-    const light = new THREE.DirectionalLight(0xffffff,5);
+    const light = new THREE.DirectionalLight(0xffffff,4.8);
     light.position.set(10,10,10);
     scene.add(light);
 
@@ -50,6 +50,7 @@ function init() {
 function animate() {
     requestAnimationFrame(animate);
     objectModel.rotation.z += 0.002;
+    objectModel.rotation.y += 0.001;
     renderer.render(scene, camera);
 }
 
