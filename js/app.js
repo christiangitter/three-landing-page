@@ -18,15 +18,16 @@ function init() {
 
     //Camera Setup 
     camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-    camera.position.set(0,20, 150);
+    camera.position.set(0, 15, 150);
     
     //set Hintergrundbeleuchtung
-    const ambient = new THREE.AmbientLight(0x404040,70)
+    const ambient = new THREE.AmbientLight(0x404040,90)
     scene.add(ambient)
 
     // set Strahler
-    const light = new THREE.DirectionalLight(0xffffff,10);
-    light.position.set(70,20,20);
+    const light = new THREE.DirectionalLight(0xffffff,3);
+    light.position.set(90,40,90);
+    
     scene.add(light);
 
     //Renderer-Setup
@@ -41,6 +42,7 @@ function init() {
     loader.load('3DModels/3Dtesla/scene.gltf', function(gltf) {
         scene.add(gltf.scene);
         objectModel = gltf.scene.children[0];
+        objectModel.rotation.z = -0.6;
         animate();
     });
 
@@ -49,7 +51,7 @@ function init() {
 // lässt das Model rotieren
 function animate() {
     requestAnimationFrame(animate);
-    objectModel.rotation.z -= 0.0012;
+    objectModel.rotation.z -= 0.0015;
     //objectModel.rotation.y += 0.001;
     renderer.render(scene, camera);
 }
