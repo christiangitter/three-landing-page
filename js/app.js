@@ -43,7 +43,8 @@ function init() {
         scene.add(gltf.scene);
         objectModel = gltf.scene.children[0];
         objectModel.rotation.z = -0.6;
-        animate();
+        renderer.render(scene, camera);
+        //animate();
     });
 
 }
@@ -51,9 +52,9 @@ function init() {
 // lässt das Model rotieren
 function animate() {
     requestAnimationFrame(animate);
-    objectModel.rotation.z -= 0.0012;
+    objectModel.rotation.z -= 0.005;
     //objectModel.rotation.y += 0.001;
-    renderer.render(scene, camera);
+   
 }
 
 init();
