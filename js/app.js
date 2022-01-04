@@ -15,16 +15,20 @@ function init() {
     const aspect = container.clientWidth / container.clientHeight;
     const near = 0.1;
     const far = 500;
-    //Camera Setup
+    
+    //Camera Setup 
     camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
     camera.position.set(0, 0, 5);
-
+    
+    //set Hintergrundbeleuchtung
     const ambient = new THREE.AmbientLight(0x404040,4)
     scene.add(ambient)
 
+    // set Strahler
     const light = new THREE.DirectionalLight(0xffffff,5);
     light.position.set(10,10,10);
     scene.add(light);
+
     //Renderer-Setup
     renderer = new THREE.WebGLRenderer({antialias:true, alpha: true});
     renderer.setSize(container.clientWidth, container.clientHeight);
@@ -42,6 +46,7 @@ function init() {
 
 }
 
+// lässt das Model rotieren
 function animate() {
     requestAnimationFrame(animate);
     objectModel.rotation.z += 0.002;
@@ -50,6 +55,7 @@ function animate() {
 
 init();
 
+// resized das Model wenn Fenster sich verkleinert 
 function onWindowResize() {
     camera.aspect = container.clientWidth / container.clientHeight;
     camera.updateProjectionMatrix();
@@ -57,5 +63,6 @@ function onWindowResize() {
     renderer.setSize(container.clientWidth,container.clientHeight);
 }
 
+//die Funktion wird aufgerufen wenn Fenster tatsächlich verkleinert wird
 window.addEventListener("resize", onWindowResize);
 
