@@ -8,7 +8,7 @@
 :root {
   --black: #333;
   --white: #d4d4d4;
-  --akzent: #579f47;
+  --akzent: #efbc0f;
 }
 
 .dark {
@@ -20,7 +20,14 @@
 body {
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
-  background-color: var(--white);
+  /*background-color: var(--white);*/
+  background: rgb(255, 184, 0);
+  background: linear-gradient(
+    40deg,
+    rgba(255, 184, 0, 0.3925945378151261) 0%,
+    rgba(215, 155, 0, 0.4458158263305322) 50%,
+    rgba(255, 235, 0, 0.3029586834733894) 100%
+  );
 }
 
 header {
@@ -125,6 +132,23 @@ header .logo-img {
 .navigation li a:hover {
   background: var(--akzent);
   color: var(--white);
+}
+
+.content-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper .content {
+  background-color: rgb(245, 245, 245);
+  width: 50vw;
+  height: 70vh;
+  border-radius: 20px;
+  -webkit-box-shadow: 1px 0px 15px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 0px 15px 1px rgba(0, 0, 0, 0.5);
 }
 
 .scene,
