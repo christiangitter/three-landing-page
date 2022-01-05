@@ -18,16 +18,19 @@ function init() {
 
     //Camera Setup 
     camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-    camera.position.set(0, 0, 50);
+    camera.position.set(0, 20, 120);
     
     //set Hintergrundbeleuchtung
-    const ambient = new THREE.AmbientLight(0x404040,1)
+    const ambient = new THREE.AmbientLight(0xffff00,30)
     scene.add(ambient)
 
+    const plight = new THREE.PointLight( 0xffff00, 10, 10 );
+    plight.position.set( 5, 12, 5 );
+    scene.add( plight );
+
     // set Strahler
-    const light = new THREE.DirectionalLight(0xffffff,1);
-    light.position.set(0,0,0);
-    
+    const light = new THREE.DirectionalLight(0xffffff,15);
+    light.position.set(70,70,70);
     scene.add(light);
 
     //Renderer-Setup
@@ -39,12 +42,12 @@ function init() {
 
     //Load 3D-Model
     let loader = new THREE.GLTFLoader();
-    loader.load('3DModels/a_windy_day/scene.gltf', function(gltf) {
+    loader.load('3DModels/tesla_tequila/scene.gltf', function(gltf) {
         scene.add(gltf.scene);
         objectModel = gltf.scene.children[0];
-        objectModel.rotation.z = -0.6;
-        renderer.render(scene, camera);
-        //animate();
+        objectModel.rotation.z = -1.6;
+        //renderer.render(scene, camera);
+        animate();
     });
 
 }
@@ -52,8 +55,9 @@ function init() {
 // lässt das Model rotieren
 function animate() {
     requestAnimationFrame(animate);
-    objectModel.rotation.z -= 0.005;
+    objectModel.rotation.z -= 0.0006;
     //objectModel.rotation.y += 0.001;
+    renderer.render(scene, camera);
    
 }
 
