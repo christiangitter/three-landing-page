@@ -18,15 +18,15 @@ function init() {
 
     //Camera Setup 
     camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-    camera.position.set(0, 0, 5);
+    camera.position.set(0, 0, 50);
     
     //set Hintergrundbeleuchtung
-    const ambient = new THREE.AmbientLight(0x404040,100)
+    const ambient = new THREE.AmbientLight(0x404040,1)
     scene.add(ambient)
 
     // set Strahler
-    const light = new THREE.DirectionalLight(0xffffff,20);
-    light.position.set(90,40,90);
+    const light = new THREE.DirectionalLight(0xffffff,1);
+    light.position.set(0,0,0);
     
     scene.add(light);
 
@@ -39,7 +39,7 @@ function init() {
 
     //Load 3D-Model
     let loader = new THREE.GLTFLoader();
-    loader.load('3DModels/crystal/scene.gltf', function(gltf) {
+    loader.load('3DModels/a_windy_day/scene.gltf', function(gltf) {
         scene.add(gltf.scene);
         objectModel = gltf.scene.children[0];
         objectModel.rotation.z = -0.6;
