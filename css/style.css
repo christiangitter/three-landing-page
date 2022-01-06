@@ -9,19 +9,33 @@
   --black: #333;
   --white: #d4d4d4;
   --akzent: #efbc0f;
+  --navigation: #ffb800;
+  --navigation: linear-gradient(
+    40deg,
+    rgba(255, 184, 0, 0.8) 0%,
+    rgba(215, 155, 0, 0.8) 50%,
+    rgba(255, 235, 0, 0.8) 100%
+  );
+  --content:#f5f5f5;
 }
 
 .dark {
   --black: #d4d4d4;
   --white: #333;
   --akzent: #efbc0f;
+  background: rgb(2,0,36);
+  background: linear-gradient(137deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 66%, rgba(0,67,120,1) 100%); 
+  --navigation: #090979;
+  --navigation: linear-gradient(137deg, rgba(2,0,36,0.8) 0%, rgba(9,9,121,0.8) 66%, rgba(0,67,120,0.8) 100%); 
+  --content: #f5f5f5;
 }
+
 
 body {
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
   /*background-color: var(--white);*/
-  background: rgb(255, 184, 0);
+  background: #ffb800;
   background: linear-gradient(
     40deg,
     rgba(255, 184, 0, 0.3925945378151261) 0%,
@@ -29,6 +43,7 @@ body {
     rgba(255, 235, 0, 0.3029586834733894) 100%
   );
 }
+
 
 header {
   position: absolute;
@@ -106,7 +121,7 @@ header .logo-img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--white);
+  background: var(--navigation);
   z-index: 4;
   flex-direction: column;
   transition: 0.5s;
@@ -143,7 +158,7 @@ header .logo-img {
 }
 
 .content-wrapper .content {
-  background-color: rgb(245, 245, 245);
+  background-color: var(--content);
   width: 50vw;
   height: 70vh;
   border-radius: 20px;
