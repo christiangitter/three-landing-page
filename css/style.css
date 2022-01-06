@@ -24,9 +24,9 @@
   --white: #333;
   --akzent: #efbc0f;
   background: rgb(2,0,36);
-  background: linear-gradient(137deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 66%, rgba(0,67,120,1) 100%); 
+  background: linear-gradient(312deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 66%, rgba(0,67,120,1) 100%); 
   --navigation: #090979;
-  --navigation: linear-gradient(137deg, rgba(2,0,36,0.8) 0%, rgba(9,9,121,0.8) 66%, rgba(0,67,120,0.8) 100%); 
+  --navigation: linear-gradient(312deg, rgba(2,0,36,0.8) 0%, rgba(9,9,121,0.8) 66%, rgba(0,67,120,0.8) 100%);
   --content: #f5f5f5;
 }
 
