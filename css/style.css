@@ -179,7 +179,7 @@ header .logo-img {
   padding-bottom:20px ;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 2.4em;
+  font-size: 2vw;
   text-decoration: underline;
   text-decoration-color: #ffb800;
   text-decoration-thickness: 6px;
@@ -188,18 +188,18 @@ header .logo-img {
 .content-wrapper .content .content-text p {
   font-weight: 300;
   padding-left: 60px;
-  font-size: 1em;
+  font-size: 1vw;
 }
 
 #product-headline {
   font-weight: 800;
-  font-size: 1.2em;
+  font-size: 1.5vw;
   padding-top: 30px;
 }
 
 #price {
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1.1vw;
   padding-top: 5px;
   color: rgb(150, 150, 150);
 }
