@@ -55,7 +55,7 @@ function init() {
 // lässt das Model rotieren
 function animate() {
     requestAnimationFrame(animate);
-    objectModel.rotation.z -= 0.0005;
+    objectModel.rotation.z -= 0.0004;
     //objectModel.rotation.y += 0.001;
     renderer.render(scene, camera);
    
