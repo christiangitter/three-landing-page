@@ -1,9 +1,7 @@
 
-
+/*WENN MINDESTENS 2000px ERREICHT SIND, BEHALTE FONT-SIZE 20PX*/
 @media only screen and (min-width: 2000px) {
   .content-wrapper .content .content-text p {
-    font-weight: 300;
-    padding-left: 60px;
     font-size: 20px;
   }
 }
