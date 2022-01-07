@@ -6,8 +6,8 @@
 }
 
 :root {
-  --black: #333;
-  --white: #d4d4d4;
+  --black: #d89c04;
+  --white: white;
   --akzent: #efbc0f;
   --navigation: #ffb800;
   --navigation: linear-gradient(
@@ -21,7 +21,7 @@
 
 .dark {
   --black: #d4d4d4;
-  --white: #333;
+  --white: black;
   --akzent: #efbc0f;
   background: rgb(2,0,36);
   background: linear-gradient(312deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 66%, rgba(0,67,120,1) 100%); 
@@ -87,6 +87,8 @@ header .logo-img {
   align-items: center;
   cursor: pointer;
   margin-left: 10px;
+  background-color: var(--white);
+  border-radius: 50%;
 }
 
 .btn i {
