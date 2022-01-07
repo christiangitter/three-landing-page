@@ -157,6 +157,19 @@ header .logo-img {
   color: var(--white);
 }
 
+.medium-circle {
+  opacity: 0.2;
+  z-index: -1;
+  position: absolute;
+}
+
+.small-circle {
+  opacity: 0.2;
+  z-index: -1;
+  position: absolute;
+  display: none;
+}
+
 .content-wrapper {
   width: 100vw;
   height: 100vh;
@@ -173,6 +186,7 @@ header .logo-img {
   -webkit-box-shadow: 1px 0px 15px 1px rgba(0, 0, 0, 0.5);
   box-shadow: 1px 0px 15px 1px rgba(0, 0, 0, 0.5);
   display: flex;
+  z-index: 1;
 }
 
 .content-wrapper .content .content-text {
