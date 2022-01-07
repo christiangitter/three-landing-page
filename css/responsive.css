@@ -1,3 +1,13 @@
+
+
+@media only screen and (min-width: 2000px) {
+  .content-wrapper .content .content-text p {
+    font-weight: 300;
+    padding-left: 60px;
+    font-size: 20px;
+  }
+}
+
 @media only screen and (max-width: 1020px) {
   .medium-circle {
    display: none;
