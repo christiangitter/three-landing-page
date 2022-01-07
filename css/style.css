@@ -19,6 +19,7 @@
     rgba(255, 235, 0, 0.8) 100%
   );
   --content:#f5f5f5;
+  --underline: #ffb800;
 }
 
 .dark {
@@ -32,6 +33,7 @@
   --navigation: #090979;
   --navigation: linear-gradient(312deg, rgba(2,0,36,0.8) 0%, rgba(9,9,121,0.8) 66%, rgba(0,67,120,0.8) 100%);
   --content: #f5f5f5;
+  --underline: #090979;
 }
 
 
@@ -187,7 +189,7 @@ header .logo-img {
   letter-spacing: 1px;
   font-size: 2vw;
   text-decoration: underline;
-  text-decoration-color: #ffb800;
+  text-decoration-color: var(--underline);
   text-decoration-thickness: 6px;
 }
 
