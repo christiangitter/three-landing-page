@@ -7,7 +7,7 @@
 
 :root {
   --nav-color:#df9100;
-  --shinewhite: white;
+  --shinewhite: rgba(255, 255, 255, 0.5);
   --black: #333;
   --white: #d4d4d4;
   --akzent: #efbc0f;
