@@ -228,13 +228,13 @@ header .logo-img {
 #product-headline {
   font-weight: 800;
   font-size: 1.5vw;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 #price {
   font-weight: 400;
   font-size: 1.1vw;
-  padding-top: 5px;
+  padding-top: 10px;
   color: rgb(150, 150, 150);
 }
 
@@ -266,7 +266,7 @@ canvas {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   background-color: rgb(240, 240, 240);
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .progress-bar {
