@@ -4,6 +4,10 @@
   .content-wrapper .content .content-text p {
     font-size: 20px;
   }
+
+  .add-to-cart {
+    line-height: 28px;
+  }
 }
 
 @media only screen and (max-width: 1020px) {
