@@ -538,3 +538,16 @@ canvas {
   color: white;
   padding-left: 15px;
 }
+
+.created {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.created p{
+  font-weight: 300;
+  color: var(--nav-color);
+}
