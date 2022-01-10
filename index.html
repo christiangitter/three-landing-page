@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link
@@ -79,6 +80,42 @@
       <li><a href="#">Portfolio</a></li>
       <li><a href="#">News</a></li>
     </ul>
+    <!--START MODAL-->
+    <div class="modal">
+         <div class="top-content">
+            <div class="left-text">
+               Information
+            </div>
+            <span class="close-icon"><i class="fas fa-times"></i></span>
+            <div class="fas fa-info-circle"></div>
+         </div>
+         <div class="bottom-content">
+            <div class="text">
+               Demoseite
+            </div>
+            <p>
+               Diese Seite dient lediglich als Beispiel einer Landingpage.<br> Die Inhalte dienen lediglich als Veranschaulichung.
+            </p>
+            <div class="close-btn">
+               <button>okay</button>
+            </div>
+         </div>
+      </div>
+      <script>
+        window.onload = function(){
+          $('.modal').toggleClass("show");
+          $('.show-btn').addClass("disabled");
+        }
+        $('.close-icon').click(function(){
+          $('.modal').toggleClass("show");
+          $('.show-btn').removeClass("disabled");
+        });
+        $('.close-btn').click(function(){
+          $('.modal').toggleClass("show");
+          $('.show-btn').removeClass("disabled");
+        });
+     </script>
+      <!--END MODAL-->
     <script src="js/menu.js"></script>
     <script src="js/darkmode.js"></script>
     <script src="js/three.min.js"></script>

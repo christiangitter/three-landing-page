@@ -557,3 +557,92 @@ canvas {
 #model {
   display: none;
 }
+
+/*START MODAL*/
+.modal {
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  bottom: -100%;
+  width: 360px;
+  transition: bottom 0.4s, opacity 0.4s;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.modal.show {
+  bottom: 0;
+  opacity: 1;
+}
+.modal .top-content {
+  background: rgb(61, 61, 61);
+  width: 100%;
+  padding: 0 0 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.top-content .left-text {
+  text-align: left;
+  padding: 10px 15px;
+  font-size: 18px;
+  color: #f2f2f2;
+  font-weight: 500;
+  user-select: none;
+}
+.top-content .close-icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 23px;
+  color: silver;
+  cursor: pointer;
+}
+.close-icon:hover {
+  color: #b6b6b6;
+}
+.top-content .fa-info-circle {
+  font-size: 80px;
+  color: #f2f2f2;
+}
+.modal .bottom-content {
+  background: white;
+  width: 100%;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bottom-content .text {
+  font-size: 28px;
+  font-weight: 600;
+  color: #34495e;
+}
+.bottom-content p {
+  font-size: 18px;
+  line-height: 27px;
+  color: grey;
+  text-align: center;
+}
+.bottom-content .close-btn {
+  padding: 15px 0;
+}
+
+.close-btn button {
+  padding: 9px 13px;
+  background: #27ae60;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  color: #f2f2f2;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.close-btn button:hover {
+  background: #26a65b;
+}
+/*END MODAL*/
