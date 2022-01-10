@@ -42,7 +42,7 @@ function init() {
 
     //Load 3D-Model
     let loader = new THREE.GLTFLoader();
-    loader.load('3DModels/tesla_tequila/scene.gltf', function(gltf) {
+    loader.load('../3DModels/tesla_tequila/scene.gltf', function(gltf) {
         scene.add(gltf.scene);
         objectModel = gltf.scene.children[0];
         objectModel.rotation.z = -1.6;
