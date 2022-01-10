@@ -475,7 +475,7 @@ canvas {
     transform: translateX(72px) rotate(0deg) translateY(1px);
   }
   100% {
-    transform: translateX(180px) rotate(-16deg);
+    transform: translateX(200px) rotate(-16deg);
   }
 }
 
@@ -492,6 +492,6 @@ canvas {
     transform: translateX(72px) rotate(0deg) translateY(1px);
   }
   100% {
-    transform: translateX(180px) rotate(-16deg);
+    transform: translateX(200px) rotate(-16deg);
   }
 }
