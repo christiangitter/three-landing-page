@@ -1,4 +1,3 @@
-
 /*WENN MINDESTENS 2000px ERREICHT SIND, BEHALTE FONT-SIZE 20PX*/
 @media only screen and (min-width: 2000px) {
   .content-wrapper .content .content-text p {
@@ -12,19 +11,19 @@
 
 @media only screen and (max-width: 1250px) {
   .content-wrapper .content {
-      margin-top: 100px;
-      width: 70vw;
-      height: 60vh;
-    }
+    margin-top: 100px;
+    width: 70vw;
+    height: 60vh;
+  }
 
-    .content-wrapper .content .content-text h1 {
-      font-size: 1.5vw;
-    }
+  .content-wrapper .content .content-text h1 {
+    font-size: 1.5vw;
+  }
 }
 
 @media only screen and (max-width: 1020px) {
   .medium-circle {
-   display: none;
+    display: none;
   }
   .small-circle {
     display: block;
@@ -80,19 +79,16 @@
     width: 90vw;
     height: 60vh;
   }
-
 }
-
 
 @media only screen and (max-width: 800px) {
   .medium-circle {
-   display: none;
+    display: none;
   }
   .small-circle {
     display: none;
   }
 }
-
 
 @media only screen and (max-width: 700px) {
   header {
@@ -106,23 +102,22 @@
   }
 
   .scene,
-canvas {
-  width: 50%;
-  height: 70%;
-}
+  canvas {
+    width: 50%;
+    height: 70%;
+  }
 
-.progress-area {
-  margin-left: 20px;
-  padding:10px;
-}
-
+  .progress-area {
+    margin-left: 20px;
+    padding: 10px;
+  }
 }
 
 @media only screen and (max-width: 580px) {
   header img {
     width: 100px;
   }
-   
+
   .content-wrapper .content .content-text p {
     font-weight: 300;
     padding-left: 20px;
@@ -158,11 +153,25 @@ canvas {
   .add-to-cart {
     font-size: 4vw;
   }
-  
+}
+
+@media only screen and (width: 414px) and (height: 896px) {
+  .content-wrapper .content {
+    height: 45vh;
+  }
+
+  .created {
+    flex-direction: column;
+  }
+
+  #model {
+    display: block;
+    font-size: 2vw;
+  }
 }
 
 @media only screen and (max-width: 370px) {
-  .progress-area{
+  .progress-area {
     display: none;
   }
 
@@ -171,4 +180,3 @@ canvas {
     font-size: 6vw;
   }
 }
-

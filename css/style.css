@@ -22,7 +22,7 @@
   --underline: #ffb800;
   --addcart: #ffa600;
   --addcarthover: #ffc124;
-  --socialbg:#df9100;
+  --socialbg: #df9100;
 }
 
 .dark {
@@ -49,7 +49,7 @@
   --underline: #090979;
   --addcart: #090979;
   --addcarthover: #1a1a74;
-  --socialbg:#090979;
+  --socialbg: #090979;
 }
 
 body {
@@ -523,7 +523,7 @@ canvas {
 .fab:hover {
   opacity: 0.7;
   transform: scale(1.1);
-  transition: transform 0.5s
+  transition: transform 0.5s;
 }
 
 /* Set a specific color for each brand */
@@ -549,7 +549,11 @@ canvas {
   align-items: center;
 }
 
-.created p{
+.created p {
   font-weight: 300;
   color: var(--nav-color);
+}
+
+#model {
+  display: none;
 }
