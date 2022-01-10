@@ -11,6 +11,12 @@ function move() {
         clearInterval(id);
         i = 0;
       } else {
+        if(width >=80) {
+          elem.style.backgroundColor = 'palevioletred';
+        }
+        else {
+          elem.style.backgroundColor = 'rgb(122, 202, 122)';
+        }
         width++;
         elem.style.width = width + "%";
       }

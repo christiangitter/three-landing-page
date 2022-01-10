@@ -255,7 +255,7 @@ canvas {
 #myBar {
   width: 1%;
   height: 5px;
-  background-color: var(--underline);
+  /*background-color: var(--underline);*/
 }
 
 .progress-area {
