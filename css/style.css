@@ -300,7 +300,7 @@ canvas {
   border: 1px solid rgb(184, 184, 184);
   -webkit-appearance: none;
   -webkit-tap-highlight-color: transparent;
-  font-size: 1vw;
+  font-size: 1.2vw;
   border-radius: 8px;
   padding: 20px;
   font-weight: 500;
@@ -337,7 +337,7 @@ canvas {
   opacity: var(--o, 0);
   transform: translate(-50%, var(--y, 12px));
   position: absolute;
-  top: 28px;
+  top: 20px;
   left: 50%;
   transition: opacity 0.3s, transform 0.3s;
   transition-delay: var(--d, 0s);
@@ -470,12 +470,12 @@ canvas {
   49%,
   57%,
   60% {
-    transform: translateX(72px) rotate(0deg);
+    transform: translateX(23px) rotate(0deg);
   }
   40%,
   47%,
   54% {
-    transform: translateX(72px) rotate(0deg) translateY(1px);
+    transform: translateX(23px) rotate(0deg) translateY(1px);
   }
   100% {
     transform: translateX(200px) rotate(-16deg);
@@ -487,12 +487,12 @@ canvas {
   49%,
   57%,
   60% {
-    transform: translateX(72px) rotate(0deg);
+    transform: translateX(23px) rotate(0deg);
   }
   40%,
   47%,
   54% {
-    transform: translateX(72px) rotate(0deg) translateY(1px);
+    transform: translateX(23px) rotate(0deg) translateY(1px);
   }
   100% {
     transform: translateX(200px) rotate(-16deg);
