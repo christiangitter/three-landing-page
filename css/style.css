@@ -22,6 +22,7 @@
   --underline: #ffb800;
   --addcart: #ffa600;
   --addcarthover: #ffc124;
+  --socialbg:#df9100;
 }
 
 .dark {
@@ -48,6 +49,7 @@
   --underline: #090979;
   --addcart: #090979;
   --addcarthover: #1a1a74;
+  --socialbg:#090979;
 }
 
 body {
@@ -507,13 +509,14 @@ canvas {
 }
 
 .fab {
-  padding: 10px;
+  padding: 12px;
   font-size: 30px;
-  width: 50px;
+  width: 60px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
   margin-right: 5px;
+  border: 2px solid white;
 }
 
 /* Add a hover effect if you want */
@@ -525,13 +528,13 @@ canvas {
 
 /* Facebook */
 .fa-facebook-f {
-  background: #3B5998;
+  background: var(--socialbg);
   color: white;
 }
 
 /* Twitter */
 .fa-twitter {
-  background: #55ACEE;
+  background: var(--socialbg);
   color: white;
-  padding-left: 12px;
+  padding-left: 15px;
 }
